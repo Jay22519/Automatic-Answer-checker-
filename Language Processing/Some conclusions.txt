@@ -1,0 +1,6 @@
+So wmd is great at performing/identifying sentences which are different in words but convey same meaning 
+
+Google Universal Sentence Encoder is good creating Vector space 
+
+
+Bert model is pretty slow for our task ( Let's see if we can find some faster way of using bert model)
