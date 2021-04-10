@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends "layout.html" %}
 {% block content %}
 <main class="page contact-page">
@@ -6,11 +7,11 @@
             <div class="heading">
                 <h2>live demo</h2>
             </div>
-            <form action="/uploader" method="POST" enctype="multipart/form-data">
+            <form action="/result" method="POST" enctype="multipart/form-data">
                 <div class="form-group"><label for="file1">Teacher</label><input class="form-control-file item"
-                        type="file" id="file1"></div>
+                        type="file" id="file1" name="file1"></div>
                 <div class="form-group"><label for="file2">Student</label><input class="form-control-file item"
-                        type="file" id="file2"></div>
+                        type="file" id="file2" name="file2"></div>
                 <div class="form-group"><button class="btn btn-primary btn-block btn-lg gradient" type="submit">Submit
                         Form</button></div>
             </form>
@@ -18,3 +19,42 @@
     </section>
 </main>
 {% endblock %}
+=======
+{% extends "layout.html" %} {% block content %}
+<main class="page contact-page">
+	<section class="portfolio-block contact">
+		<div class="container">
+			<div class="heading">
+				<h2>live demo</h2>
+			</div>
+			<form action="/result" method="POST" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="file1">Teacher</label
+					><input
+						class="form-control-file item"
+						type="file"
+						id="file1"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="file2">Student</label
+					><input
+						class="form-control-file item"
+						type="file"
+						id="file2"
+					/>
+				</div>
+				<div class="form-group">
+					<button
+						class="btn btn-primary btn-block btn-lg"
+						type="submit"
+					>
+						Submit Form
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+</main>
+{% endblock %}
+>>>>>>> 869aa9f22b3dd593eef180a4fcd2fd104ee62e28
