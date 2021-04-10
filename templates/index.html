@@ -1,28 +1,50 @@
 {% extends "layout.html" %}
 {% block content %}
-    <main class="page project-page">
-        <section class="portfolio-block project">
-            <div class="container">
-                <div class="heading">
-                    <h2>Group -&nbsp;</h2>
-                </div>
-                <div class="image" style="background-image:url(&quot;{{url_for('static',filename='assets/img/tech/image4.jpg')}}&quot;);"></div>
-                <div class="row">
-                    <div class="col-12 col-md-6 offset-md-1 info">
-                        <h3>Description</h3>
-                        <p>Nam a ultrices mauris. Nam efficitur, lorem a vehicula interdum, ligula velit euismod lorem,
-                            vitae vehicula ligula tortor eu leo. Maecenas porttitor massa ut vestibulum euismod. Aliquam
-                            eget mi aliquam.</p>
-                        <p>Lorem ipsum dapibus dolor non, malesuada mauris. Aliquam eleifend mauris non odio mattis
-                            auctor. Aenean sit amet elementum tellus, a facilisis ligula. Pellentesque ac vehicula
-                            mauris.</p>
-                    </div>
-                    <div class="col-12 col-md-3 offset-md-1 meta">
-                        <div class="tags"><span class="meta-heading">Tags</span><a href="#">Resource</a><a
-                                href="#">Project</a><span class="meta-heading">Date</span><span>25-04-2017</span></div>
-                    </div>
-                </div>
+<main class="page project-page">
+    <section class="portfolio-block project">
+        <div class="container">
+            <div class="heading">
+                <h2>Group -&nbsp;</h2>
             </div>
-        </section>
-    </main>
+            <div class="image"
+                style="background-image:url(&quot;{{url_for('static',filename='assets/img/tech/image3.jpg')}}&quot;);">
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-1 info">
+                    <h3>Description</h3>
+                    <p><strong>Creating an automatic answer checker web application for students and teachers, for
+                            grading of the
+                            answers submitted by students against an ideal solution uploaded by the teacher.</strong>
+                    </p>
+
+                    <ul>
+                        <li>
+                            <p>Students upload their hand-written answer sheets which will be converted to text.</p>
+                        </li>
+                        <li>
+                            <p>The solution provided by the students will be automatically marked against the
+                                ideal/correct
+                                answer given by the evaluator/professor, using AI to check similarity of the two answers
+                            </p>
+                        </li>
+                    </ul>
+
+            </div>
+            <div class="col-12 col-md-3 offset-md-1 meta">
+                <div class="tags">
+                    <span class="meta-heading">Members</span>
+                    <span>Ashish Lakra</span>
+                    <span>Rishabh Agrawal</span>
+                    <span>Jay Puri Goswami</span>
+                    <span>Harshal Sable</span>
+                    <span>Anurag Baral</span>
+                    <span>Rishikesh Rachchh</span>
+                    <span><b><strike>Prince Sharma</strike></b></span>
+
+                    <span class="meta-heading">Date</span><span>Feb 6, 2021</span></div>
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
 {% endblock %}
