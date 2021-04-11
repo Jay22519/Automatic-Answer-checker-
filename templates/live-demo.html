@@ -14,6 +14,7 @@
                 <div class="form-group"><button class="btn btn-primary btn-block btn-lg gradient" type="submit">Submit
                         Form</button></div>
             </form>
+			{% if result %}
 			<p>
 				Teacher filename: {{ result["Teacher Filename"] }} <br/>
 				Student grades: <br/>
@@ -22,6 +23,7 @@
 				Score: {{i["Score"]}} <br/>
 				{% endfor %}
 			</p>
+			{% endif %}
         </div>
     </section>
 </main>
