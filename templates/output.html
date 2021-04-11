@@ -9,10 +9,13 @@
             <div class="row">
                 {% for i in result["Student Grades"] %}
                 <div class="col-md-6 col-lg-4">
-                    <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover"
-                                src="{{i['Filename']}}" alt="Card Image"></a>
+                    <div class="card border-0">
+                        <a href="{{i['Filepath']}}">
+                        <img class="card-img-top scale-on-hover"
+                                src="{{i['Filepath']}}" alt="Card Image">
+                        </a>
                         <div class="card-body">
-                            <h6><a href="#">{{i["Filename"]}}</a></h6>
+                            <h6>{{i["Filename"]}}</h6>
                             <p class="text-muted card-text">Score: {{i["Score"]}}</p>
                         </div>
                     </div>
