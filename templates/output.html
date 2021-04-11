@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<main class="page projects-page">
+    <section class="portfolio-block projects-cards">
+        <div class="container">
+            <div class="heading">
+                <h2>STUDENTS</h2>
+            </div>
+            <div class="row">
+                {% for i in result["Student Grades"] %}
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover"
+                                src="{{url_for('instance/uploads' , filename=i['Filename'])}}" alt="Card Image"></a>
+                        <div class="card-body">
+                            <h6><a href="#">{{i["Filename"]}}</a></h6>
+                            <p class="text-muted card-text">Score: {{i["Score"]}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
